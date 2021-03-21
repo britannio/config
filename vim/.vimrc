@@ -24,7 +24,7 @@ set clipboard=unnamed
 autocmd InsertEnter * set cul 
 autocmd InsertLeave * set nocul 
 
-imap ii <Esc>
+" imap ii <Esc>
 
 " reemove newbie crutches in Command Mode
 cnoremap <Down> <Nop>
