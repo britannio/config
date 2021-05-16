@@ -1,2 +1,4 @@
 cp ~/.vimrc .vimrc
-cp -r ~/.vim .
+cp ~/.vim/colors/* colors/
+cp ~/.vim/autoload/* autoload/
+#cp -r ~/.vim .
