@@ -19,7 +19,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 syntax enable
 colorscheme tender
 set laststatus=2
-
+set noshowmode
 " set lighline theme inside lightline config
 " let g:lightline = { 'colorscheme': 'tender' }
 
@@ -261,15 +261,16 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 "
-" For theming
+" theming
 Plug 'jacoborus/tender.vim'
-"
+" LSP support for several languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Dart support
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 
+" Shows a fancy status bar
 Plug 'itchyny/lightline.vim'
 
 " Initialize plugin system
@@ -277,5 +278,7 @@ call plug#end()
 
 " for dart (applies the default settings + overrides some specific settings)
 let g:lsc_auto_map = {'defaults': v:true}
+" CoC extensions
+let g:coc_global_extensions = ['coc-flutter', 'coc-tsserver', 'coc-pyright']
 
 
