@@ -1,0 +1,37 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+f4",
+        "command": "workbench.action.closeWindow"
+    },
+    {
+        "key": "alt+f4",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+f4",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenPreviousEditor"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+        "when": "!inEditorsPicker"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditor",
+        "when": "!inEditorsPicker"
+    }
+]
